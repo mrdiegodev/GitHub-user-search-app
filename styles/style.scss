@@ -1,5 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+// VARIBALES 
 
+// LIGHT MODE COLORS
+
+$blue: hsl(212,100%,50%);
+$lynchGray: hsl(217,20%,51%);
+$kashmirBlue: hsl(217,35%,45%);
+$ebonyClay: hsl(217,21%,21%);
+$zirconWhite: hsl(227,100%,98%);
+$pureWhite: hsl(0,0%,100%);
+
+// DARK MODE COLORS
+
+$pureWhite: hsl(0,0%,100%);
+$blue: hsl(212,100%,50%);
+$bigStoneBlue: hsl(220,40%,13%);
+$cloudBurstBlue: hsl(222,41%,20%);
+
+html{
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+}
 
 body{
-    background-color: #111AAA;
+    background-color: $bigStoneBlue;
+    color: $pureWhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    margin-top: 2.35rem;
+    width: 20.43rem;
+    h1{
+        display: inline;
+        font-size: 1.625rem; 
+        font-weight: bold;
+
+    }
+    #lightMode{
+        display: none;
+    }
+    #darkMode{
+        display: inline;
+        float: right;
+    }
 }
