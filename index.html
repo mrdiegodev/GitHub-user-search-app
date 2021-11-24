@@ -5,35 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
   <title>Frontend Mentor | GitHub user search app</title>
 </head>
 <body>
-
-  <header>
-    <h1>devfinder</h1>
-    <p id='darkMode'>DARK <img src="assets/icon-moon.svg" alt=""></p>
-    <p id='lightMode'>LIGHT <img src="assets/icon-sun.svg" alt=""></p>
+  <!-- HEADER SECTION HTML -->
+  <header class="header">
+    <h1 class="header__tittle">devfinder</h1>
+    <p class='header__mode header--darkModeIcon'>LIGHT <img src="assets/icon-sun.svg" alt=""></p>
+    <p class='header__mode header--lightModeIcon'>DARK <img src="assets/icon-moon.svg" alt=""></p>
   </header>
-
+  <!-- USERNAME SEARCH BAR SECTION -->
   <div class="searchBar">
-    <img src="assets/icon-search.svg" alt="">
-    <p>Search GitHub username...</p>
-    <button id="searchButton">Search</button>
+    <img src="assets/icon-search.svg" alt="" class="searchBar__img">
+    <input type="text" placeholder="Search GitHub username…" class="searchBar__input">
+    <button class="searchBar__searchButton">Search</button>
   </div>
-
+<!-- GITHUB CARD SECTION -->
   <div class="gitHubInfoCard">
-    <div class="cardHeader">
-
+    <div class="gitHubInfoCard__header">
+      <!-- profile picture img -->
+      <div class="gitHubInfoCard__header--profilePicture">Profile Picture</div>
+      <div class="gitHubInfoCard__header--userInformation">
+        <h2 class="gitHubInfoCard__header--userInformation--name">Username</h2>
+        <a href="" class="gitHubInfoCard__header--userInformation--username">usernametag</a>
+        <p class="gitHubInfoCard__header--userInformation--joinDate">Joined when?</p>
+      </div>
     </div>
-    <div class="cardDescription">
-
+  
+    <p class="gitHubInfoCard__description">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+    </p>
+  
+    <div class="gitHubInfoCard__stats">
+      <div class="gitHubInfoCard__stats--Repos">
+        <p>Repos</p>
+        <p>0</p>
+      </div>
+      <div class="gitHubInfoCard__stats--Followers">
+        <p>Followers</p>
+        <p>0</p>
+      </div>
+      <div class="gitHubInfoCard__stats--following">
+        <p>Following</p>
+        <p>0</p>
+      </div>
     </div>
-    <div class="cardNumbers">
-
-    </div>
-    <div class="cardFooter">
-      
+    <div class="gitHubInfoCard__footer">
+      <div class="gitHubInfoCard__footer--location">
+        <img src="assets/icon-location.svg" alt="">
+        <p>Location</p>
+      </div>
+      <div class="gitHubInfoCard__footer--website">
+        <img src="assets/icon-website.svg" alt="">
+        <p>Website</p>
+      </div>
+      <div class="gitHubInfoCard__footer--twitter">
+        <img src="assets/icon-twitter.svg" alt="">
+        <p>Twitter</p>
+      </div>
+      <div class="gitHubInfoCard__footer--company">
+        <img src="assets/icon-company.svg" alt="">
+        <p>Company</p>
+      </div>
     </div>
   </div>
 

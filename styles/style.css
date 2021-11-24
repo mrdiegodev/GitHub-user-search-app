@@ -16,18 +16,89 @@ body {
 header {
   margin-top: 2.35rem;
   width: 20.43rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-header h1 {
+header .header__tittle {
   display: inline;
   font-size: 1.625rem;
   font-weight: bold;
 }
-header #lightMode {
+header .header__mode {
+  font-size: 0.8125rem;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+}
+header .header--lightModeIcon {
   display: none;
 }
-header #darkMode {
+header .header--darkModeIcon {
   display: inline;
   float: right;
+}
+
+.searchBar {
+  margin-top: 2rem;
+  width: 20.43rem;
+  height: 3.75rem;
+  display: flex;
+  background-color: #1e2b48;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 15px;
+}
+.searchBar .searchBar__img {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 0.4rem;
+}
+.searchBar .searchBar__input {
+  width: 11.5rem;
+  border: none;
+  font-size: 0.77rem;
+  line-height: 1.562rem;
+  background-color: inherit;
+  color: white;
+}
+.searchBar ::placeholder {
+  font-size: 0.77rem;
+  line-height: 1.562rem;
+  color: white;
+  opacity: 1;
+}
+.searchBar .searchBar__searchButton {
+  border: none;
+  border-radius: 10px;
+  background-color: #0077ff;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+  width: 84px;
+  height: 46px;
+}
+
+.gitHubInfoCard {
+  margin-top: 1rem;
+  border-radius: 0.94rem;
+  background-color: #1e2b48;
+  width: 20.43rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.gitHubInfoCard .gitHubInfoCard__header {
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.gitHubInfoCard .gitHubInfoCard__header .gitHubInfoCard__header--profilePicture {
+  width: 70px;
+  height: 70px;
+  background-color: #0077ff;
+  border-radius: 9999px;
 }
 
 /*# sourceMappingURL=style.css.map */
